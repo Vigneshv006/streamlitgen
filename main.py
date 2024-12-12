@@ -57,36 +57,32 @@ moodboard_page = st.Page(
     title="Moodboard",
     icon=":material/image:",
 )
-#project_2_page = st.Page(
-#    "views/chatbot.py",
-#    title="Chat Bot",
- ##   icon=":material/smart_toy:",
-#)
-
-uploadprompts_page = st.Page(
-    page = "views/uploadprompts.py",
-    title = "uploadprompts",
-    icon = ":material/image:",
-    
+upload_prompts_page = st.Page(
+    page = "views/upload_prompts.py",
+    title="upload_prompts",
+    icon=":material/image:",
 )
-
-uploadimage_page = st.Page(
-    page = "views/uploadimages.py",
-    title = "uploadimages",
-    icon = ":material/image:"
-    
+upload_images_page = st.Page(
+    page = "views/upload_images.py",
+    title="upload_images",
+    icon=":material/image:",
 )
-
-promptimage_page = st.Page(
-    page = "views/promptimages.py",
-    title= "promptimages",
-    icon= ":material/image:"
+image_prompt_page = st.Page(
+    page="views/image_prompt.py",
+    title="image_prompt",
+    icon=":material/image:"
 )
-
+fashion_tech_page = st.Page(
+    page="views/fashion_tech.py",
+    title="fashion_tech",
+    icon=":material/image:"
+)
 pg = st.navigation(
     {
         "Info": [about_page],
-        "Projects": [moodboard_page, uploadprompts_page, uploadimage_page,promptimage_page],
+        "Project": [moodboard_page, upload_prompts_page,upload_images_page,image_prompt_page,fashion_tech_page],
     }
 )
 pg.run()
+
+
